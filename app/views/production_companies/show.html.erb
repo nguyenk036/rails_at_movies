@@ -1,2 +1,10 @@
-<h1><%= @movie.title %></h1>
+<h2><%= @production_company.title %></h2>
 
+<p class="">This production company has produced <%= @production_company.movies.count %> of the top 100 movies. </p>
+
+<h3 class="title is-3">Movies made by <%= @production_company.name %></h3>
+<ul>
+  <%= @production_company.movies.each do | production_company | %>
+    <li><%= link_to movie.title, movie %></li>
+  <%= end %>
+</ul>
