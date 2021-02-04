@@ -4,7 +4,7 @@
 
 <h3 class="title is-3">Movies made by <%= @production_company.name %></h3>
 <ul>
-  <%= @production_company.movies.each do | production_company | %>
-    <li><%= link_to movie.title, movie %></li>
-  <%= end %>
+    <%= @production_company.movies.each do | movie | %>
+      <li><%= link_to movie.title, movie %></li>
+    <%= end %>
 </ul>
